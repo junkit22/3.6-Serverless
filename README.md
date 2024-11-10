@@ -1,57 +1,42 @@
 # 3.6-Serverless
 
-1. Create a Serverless Account:
-  - Sign up at Serverless.com.
+1. Create a new repo in Github and clone it to your local computer
+.gitignore template -> Terraform
+Add README.md
 
-2. Set Up a GitHub Repository:
-- Create a new GitHub repository.
-- Clone it to your local computer (WSL).
+2. Create a lambda.tf file with below content:
+https://github.com/jaezeu/terraform-serverless/blob/main/apigateway-lambda/lambda.tf
 
-3. Create and Deploy a Serverless App on AWS:
-  - Add the AWS-node-http-api-project folder to the cloned Git repository.
-  - Navigate into the AWS-node-http-api-project folder.
-  - Open and edit the serverless.yml file:
-    - Add your organization (org) and app name at the top.
-    - Change the service name (include your name in the service name).
--   Comment out the line: profile: serverless.
--   Change the TableName to include your name.
+3. Create a lambda_function.py file with below content:
 
-4. Ceck and Install Serverless Locally:
-- Verify installation:
-    serverless --version
-- If not installed, run:
-    npm install serverless -g
-  
-- Log in to Serverless by running:
-    serverless
-  
-Choose "Login/Register" and follow the link to log in to serverless.com.
+import boto3
+def lambda_handler(event, context):
+    result = "Hello World"
+    return {
+        'statusCode' : 200,
+        'body': result
+    }
 
 
-5. Install Plugins and Node Packages:
+4. Create a provider.tf file with below content:
 
-- Install the serverless-offline plugin:
-    npm install serverless-offline --save-dev
-- Initialize a Node package:
-    npm init
-- Deploy the Serverless App:
+provider "aws" {
+  region = "ap-southeast-1"
+}
 
-- Deploy the app to AWS with:
-    serverless deploy
-After deployment, check the endpoint URL and use curl to test the API response.
-Verify AWS Resources:
 
-6. Check AWS Console for the created resources (API Gateway, Lambda, DynamoDB, CloudFormation).
-- View application metrics on Serverless.com.
-- View Serverless CLI Help:
 
-7. For a list of commands, use:
-    serverless --help
-  Run Locally:
+5. Create a variables.tf file with below content:
 
-8. To run the Serverless app locally, use:
-    serverless offline
-Remove AWS Resources:
+variable "your_name" {
+  type = string
+  default = "jaz"  #Replace with your name here
+}
 
-9. To remove the serverless setup from AWS, run:
-    serverless remove
+
+6. Once all 6 files above have been created, Run the following commands:
+terraform init
+terraform plan
+terraform apply
+
+
