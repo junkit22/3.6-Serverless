@@ -47,7 +47,7 @@
     "glob": "^10.4.5",
     "graceful-fs": "^4.2.11",
     "human-signals": "^5.0.0",
-    "immediate": "^3.0.6",
+    "immediate": "^3.3.0",
     "inherits": "^2.0.4",
     "is-docker": "^3.0.0",
     "is-fullwidth-code-point": "^3.0.0",
