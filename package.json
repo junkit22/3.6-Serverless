@@ -70,7 +70,7 @@
     "lru-cache": "^10.4.3",
     "luxon": "^3.5.0",
     "merge-stream": "^2.0.0",
-    "mime-db": "^1.52.0",
+    "mime-db": "^1.53.0",
     "mime-types": "^2.1.35",
     "mimic-fn": "^4.0.0",
     "minimatch": "^9.0.5",
