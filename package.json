@@ -101,7 +101,7 @@
     "sorted-array-functions": "^1.3.0",
     "string-width": "^5.1.2",
     "string-width-cjs": "^4.2.3",
-    "string_decoder": "^1.1.1",
+    "string_decoder": "^1.3.0",
     "strip-ansi": "^7.1.0",
     "strip-ansi-cjs": "^6.0.1",
     "strip-final-newline": "^3.0.0",
