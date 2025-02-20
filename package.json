@@ -62,7 +62,7 @@
     "js-string-escape": "^1.0.1",
     "jsep": "^1.4.0",
     "jsonfile": "^6.1.0",
-    "jsonpath-plus": "^10.1.0",
+    "jsonpath-plus": "^10.3.0",
     "jsonschema": "^1.4.1",
     "jszip": "^3.10.1",
     "lie": "^3.3.0",
