@@ -93,7 +93,7 @@
     "rimraf": "^5.0.10",
     "safe-buffer": "^5.1.2",
     "sax": "^1.4.1",
-    "serverless": "^4.4.7",
+    "serverless": "^4.9.0",
     "setimmediate": "^1.0.5",
     "shebang-command": "^2.0.0",
     "shebang-regex": "^3.0.0",
