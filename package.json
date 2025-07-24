@@ -39,7 +39,7 @@
     "fetch-blob": "^3.2.0",
     "follow-redirects": "^1.15.9",
     "foreground-child": "^3.3.0",
-    "form-data": "^4.0.1",
+    "form-data": "^4.0.4",
     "formdata-polyfill": "^4.0.10",
     "fs-extra": "^11.2.0",
     "get-stream": "^8.0.1",
