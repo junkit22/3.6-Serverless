@@ -44,7 +44,7 @@
     "fs-extra": "^11.2.0",
     "get-stream": "^8.0.1",
     "get-tsconfig": "^4.8.1",
-    "glob": "^10.4.5",
+    "glob": "^10.5.0",
     "graceful-fs": "^4.2.11",
     "human-signals": "^5.0.0",
     "immediate": "^3.0.6",
